@@ -101,7 +101,7 @@ Robo also provides rollbacks and completions, special tasks that are eligible to
 
 ### Completion Tasks
 
-Completions run whenever their collection completes or fails, but only if all of the tasks that come before it succeed. An example of this is shown in the first example above. A filesystem stack task copies CHANDELOG.md to docs/changelog.md; after this task is added to the collection, another filesystem stack task is added as a completion to delete docs/changelog.md. This is done because docs/changelog.md is only intended to exist long enough to be used by the `mkdocs` task, which is added later. 
+Completions run whenever their collection completes or fails, but only if all of the tasks that come before it succeed. An example of this is shown in the first example above. A filesystem stack task copies CHANGELOG.md to docs/changelog.md; after this task is added to the collection, another filesystem stack task is added as a completion to delete docs/changelog.md. This is done because docs/changelog.md is only intended to exist long enough to be used by the `mkdocs` task, which is added later. 
 
 ### Rollback Tasks
 
